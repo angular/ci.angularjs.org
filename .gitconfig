@@ -1,0 +1,17 @@
+[user]
+        name = jenkins
+        email = ci-bot@angularjs.org
+[color]
+        status = auto
+        branch = auto
+        interactive = auto
+        diff = auto
+[alias]
+        co = checkout
+        st = status
+        ffm = merge --ff-only
+        coa = commit --amend
+        lg = log -p
+        br = branch
+        cob = checkout -b
+        cp = cherry-pick
