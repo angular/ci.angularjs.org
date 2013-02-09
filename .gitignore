@@ -1,0 +1,21 @@
+.CFUserTextEncoding
+.DS_Store
+.Trash
+.bash_history
+.lesshst
+.node-gyp
+.npm
+.vim
+.viminfo
+Documents
+Downloads
+Desktop
+JenkinsHome
+Library
+Music
+Movies
+Pictures
+Public
+Virtual Machines
+bin/*.log
+tmp
