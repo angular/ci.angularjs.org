@@ -1,17 +1,20 @@
 #!/bin/bash
 
-# attempt to give the virtualbox kernel module chance to load
+# give vmware a chance to init
 sleep 5
 
-# VMS=( "Windows XP (IE7)" "Windows XP (IE8)" "Windows 7 (IE9)" )
-VMS=( "Windows XP (IE8)" "Windows 7 (IE9)" )
+VM_DIR="/Users/jenkins/Virtual Machines/"
+VMS=( "Windows 7 (IE9)" "Windows XP (IE8)" )
 
-for vm in "${VMS[@]}"; do
-  VBoxManage startvm "$vm" &
+
+for VM in "${VMS[@]}"; do
+  VM_PATH=$VM_DIR/$VM.vmwarevm/$VM.vmx
+  ( echo "shutdown $VM"
+    vmrun -T fusion stop "$VM_PATH" hard
+    echo "revert $VM"
+    vmrun -T fusion revertToSnapshot "$VM_PATH" "OK"
+    echo "start $VM"
+    vmrun start "$VM_PATH"
+  ) &
 done
 
-#open /Applications/VirtualBox.app
-#sleep 5
-#open -a VirtualBox "/Users/jenkins/VirtualBox VMs/Windows 7 (IE9)/Windows 7 (IE9).vbox"
-#open -a VirtualBox "/Users/jenkins/VirtualBox VMs/Windows XP (IE8)/Windows XP (IE8).vbox"
-#open -a VirtualBox "/Users/jenkins/VirtualBox VMs/Windows XP (IE7)/Windows XP (IE7).vbox"
