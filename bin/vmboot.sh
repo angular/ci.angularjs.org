@@ -18,3 +18,4 @@ for VM in "${VMS[@]}"; do
   ) &
 done
 
+emulator @android-browser-4.2 &
