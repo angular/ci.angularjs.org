@@ -1,6 +1,7 @@
 .CFUserTextEncoding
 .DS_Store
 .Trash
+.android
 .bash_history
 .lesshst
 .node-gyp
@@ -18,5 +19,7 @@ Movies
 Pictures
 Public
 Virtual Machines
+adt-bundle-mac-x86_64/
 bin/*.log
 tmp
+npm-debug.log
