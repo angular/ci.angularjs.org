@@ -5,6 +5,7 @@
 .lesshst
 .node-gyp
 .npm
+.ssh
 .vim
 .viminfo
 Documents
