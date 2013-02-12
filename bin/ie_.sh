@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PATH="/Applications/VMware Fusion.app/Contents/Library/":$PATH
+
 winExec() {
   if [[ "$VMPATH" == *XP* ]]; then
     vmrun -T fusion -gu misko -gp heslo runScriptInGuest "$VMPATH" "" "cmd.exe /c \"$1\" $2 $3 $4" >> $LOG_FILE 2>&1
