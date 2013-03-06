@@ -23,15 +23,15 @@ rm -f angular.js.size
 
 # BUILD #
 npm install --color false
-grunt package
+grunt package --no-color
 
 
 # UNIT TESTS #
-grunt test:unit --browsers $BROWSERS --reporters=dots,junit --no-colors
+grunt test:unit --browsers $BROWSERS --reporters=dots,junit --no-colors --no-color
 
 
 # END TO END TESTS #
-grunt test:e2e --browsers $BROWSERS_E2E --reporters=dots,junit --no-colors
+grunt test:e2e --browsers $BROWSERS_E2E --reporters=dots,junit --no-colors --no-color
 
 
 # CHECK SIZE #
