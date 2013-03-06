@@ -23,20 +23,15 @@ rm -f angular.js.size
 
 # BUILD #
 npm install --color false
-rake package
+grunt package
 
 
 # UNIT TESTS #
-rake test:unit["${BROWSERS//,/+}","--reporters=dots+junit --no-colors"]
+grunt test:unit --browsers $BROWSERS --reporters=dots,junit --no-colors
 
 
 # END TO END TESTS #
-rake webserver > /dev/null &
-WEBSERVER_PID=$!
-
-trap "{ kill $WEBSERVER_PID; exit; }" EXIT
-
-rake test:e2e["${BROWSERS_E2E//,/+}","--reporters=dots+junit --no-colors"]
+grunt test:e2e --browsers $BROWSERS_E2E --reporters=dots,junit --no-colors
 
 
 # CHECK SIZE #
