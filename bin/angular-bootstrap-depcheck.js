@@ -11,7 +11,8 @@ var ALLOWED_DEPENDENCIES = [
   'grunt',
   'grunt-contrib-jshint', 
   'grunt-contrib-concat', 
-  'grunt-contrib-uglify' 
+  'grunt-contrib-uglify',
+  'grunt-contrib-watch'
 ];
 
  
