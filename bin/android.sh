@@ -6,7 +6,11 @@ LOG_FILE="/Users/jenkins/bin/android.log"
 source ~/.bashrc
 
 androidExec() {
+  # ensure that the phone is unlocked
   adb shell input keyevent 82 >> $LOG_FILE
+
+  # clear data so open tabs don't persist
+  adb shell pm clear com.android.browser
 
   # start browser
   adb shell am start -a android.intent.action.VIEW -n com.android.browser/.BrowserActivity -d "$1"
@@ -17,6 +21,7 @@ androidExec() {
 
 
 killAndroid() {
+  # stop the browser
   adb shell am force-stop com.android.browser
 }
 
