@@ -9,10 +9,13 @@ var file = __dirname + '/../JenkinsHome/workspace/angularui-bootstrap/package.js
 var ALLOWED_DEPENDENCIES = [
   'node-markdown',
   'grunt',
-  'grunt-contrib-jshint', 
   'grunt-contrib-concat', 
+  'grunt-contrib-copy',
+  'grunt-contrib-jshint',
   'grunt-contrib-uglify',
-  'grunt-contrib-watch'
+  'grunt-contrib-watch',
+  'grunt-conventional-changelog',
+  'grunt-html2js'
 ];
 
  
