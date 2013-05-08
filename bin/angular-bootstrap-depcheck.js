@@ -29,9 +29,13 @@ fs.readFile(file, 'utf8', function (err, data) {
 
   Object.keys(data.devDependencies).forEach(function(dependency) {
     if (ALLOWED_DEPENDENCIES.indexOf(dependency) === -1) {
-      throw new Error('Unauthorized dependency found: ' + dependency);
-    };
+      console.log('Unauthorized dependency found: ' + dependency + '. Not installing dependency.');
+      //Delete bad dependencies
+      delete data.devDependencies[dependency];
+    }
   });
+
+  fs.writeFileSync(file, JSON.stringify(data));
  
   console.log('Dependency check succeeded!');
 });
