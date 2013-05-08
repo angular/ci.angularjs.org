@@ -1,8 +1,7 @@
 #!/usr/local/bin/node
 
 // checks if angularui-bootstrap project uses only approved dependencies
-// so that we can safely do npm install during the build and let
-// them manage version numbers of their dependencies
+// if bad dependencies are found, remove them from package.json for npm install
 
 var fs = require('fs');
 var file = __dirname + '/../JenkinsHome/workspace/angularui-bootstrap/package.json';
@@ -15,7 +14,8 @@ var ALLOWED_DEPENDENCIES = [
   'grunt-contrib-uglify',
   'grunt-contrib-watch',
   'grunt-conventional-changelog',
-  'grunt-html2js'
+  'grunt-html2js',
+  'grunt-karma'
 ];
 
  
