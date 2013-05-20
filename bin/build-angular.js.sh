@@ -26,6 +26,10 @@ npm install --color false
 grunt package --no-color
 
 
+# NODE DOCS TESTS #
+./gen_docs.sh
+
+
 # UNIT TESTS #
 grunt test:unit --browsers $BROWSERS --reporters=dots,junit --no-colors --no-color
 
