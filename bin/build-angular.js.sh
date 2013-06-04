@@ -23,6 +23,7 @@ rm -f angular.js.size
 
 # BUILD #
 npm install --color false
+bower install
 grunt package --no-color
 
 
