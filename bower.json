@@ -1,0 +1,8 @@
+{
+  "name": "ci.angularjs.org",
+  "version": "0.0.0",
+  "dependencies": {
+    "selenium-server-standalone-2.33.0": "https://selenium.googlecode.com/files/selenium-server-standalone-2.33.0.jar",
+    "chromedriver_mac_26.0.1383.0": "https://chromedriver.googlecode.com/files/chromedriver_mac_26.0.1383.0.zip"
+  }
+}
