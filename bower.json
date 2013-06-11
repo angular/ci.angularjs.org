@@ -1,0 +1,8 @@
+{
+  "name": "ci.angularjs.org",
+  "version": "0.0.0",
+  "dependencies": {
+    "detail?name=selenium-server-standalone-2.33.0": "https://code.google.com/p/selenium/downloads/detail?name=selenium-server-standalone-2.33.0.jar",
+    "selenium-server-standalone-2.33.0": "https://selenium.googlecode.com/files/selenium-server-standalone-2.33.0.jar"
+  }
+}
