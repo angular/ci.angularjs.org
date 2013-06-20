@@ -9,6 +9,9 @@
 .ssh
 .vim
 .viminfo
+.bower/
+.config/
+.jenkins/
 Documents
 Downloads
 Desktop
