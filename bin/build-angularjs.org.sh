@@ -12,4 +12,4 @@ grunt configure --target=prod
 
 # E2E TESTS #
 grunt ht2j
-grunt test
+./node_modules/.bin/protractor protractorConf.js
