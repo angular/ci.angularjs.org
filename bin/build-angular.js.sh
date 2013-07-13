@@ -23,7 +23,7 @@ rm -f angular.js.size
 
 # BUILD #
 npm install --color false
-grunt package --no-color
+grunt ci-checks package --no-color
 
 
 # UNIT TESTS #
