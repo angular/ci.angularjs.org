@@ -17,6 +17,7 @@
 	<array>
 		<string>/usr/bin/java</string>
 		<string>-Xmx512m</string>
+		<string>-Dhudson.model.Api.INSECURE=true</string>
 		<string>-jar</string>
 		<string>/Applications/Jenkins/jenkins.war</string>
 		<string>--httpListenAddress=127.0.0.1</string>
