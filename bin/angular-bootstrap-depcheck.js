@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/env node
 
 // checks if angularui-bootstrap project uses only approved dependencies
 // if bad dependencies are found, remove them from package.json for npm install
