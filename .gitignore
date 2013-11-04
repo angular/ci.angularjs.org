@@ -27,3 +27,7 @@ bin/*.log
 tmp
 npm-debug.log
 components/
+.cache/
+.eclipse/
+.nvm/
+.pub-cache/
