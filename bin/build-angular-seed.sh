@@ -13,6 +13,8 @@ fi
 
 rm -rf test_out
 
+npm install .
+
 ./scripts/test.sh \
   --single-run \
   --browsers="$BROWSERS" \
