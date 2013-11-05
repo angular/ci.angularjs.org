@@ -15,6 +15,7 @@ then
   BROWSERS_E2E="Chrome,Firefox,/Users/jenkins/bin/safari.sh"
 fi
 
+npm install .
 
 ./scripts/web-server.js > /dev/null &
 WEBSERVER_PID=$!
