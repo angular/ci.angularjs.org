@@ -10,4 +10,4 @@ grunt install-selenium
 
 # E2E TESTS #
 grunt ht2j
-./node_modules/.bin/protractor protractorConf.js
+./test.sh
