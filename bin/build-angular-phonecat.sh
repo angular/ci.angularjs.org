@@ -22,7 +22,7 @@ WEBSERVER_PID=$!
 
 trap "{ kill $WEBSERVER_PID; exit; }" EXIT
 
-for i in {3..11}; do
+for i in {3..12}; do
 
   STEP="step-$i"
 
