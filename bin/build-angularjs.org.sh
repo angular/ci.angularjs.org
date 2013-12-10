@@ -6,7 +6,6 @@ set -xe
 # BUILD #
 npm install --color false
 grunt configure --target=prod --no-color
-grunt install-selenium --no-color
 
 # E2E TESTS #
 grunt ht2j --no-color
