@@ -4,7 +4,7 @@
 sleep 5
 
 VM_DIR="/Users/jenkins/Virtual Machines/"
-VMS=( "Windows 7 (IE11)" "Windows 7 (IE10)" "Windows 7 (IE9)" "Windows XP (IE8)
+VMS=( "Windows 7 (IE11)" "Windows 7 (IE10)" "Windows 7 (IE9)" "Windows XP (IE8)" )
 
 
 for VM in "${VMS[@]}"; do
